@@ -1,0 +1,99 @@
+<html>
+<head>
+<title> Turing machine </title>
+</head>
+
+<body background="imagenes/bg_texture.JPG">  <!-- background="imagenes/Space_background.JPG"> -->
+	
+	<script async src="sweetalert.js"></script>
+
+	<script async type="text/javascript" src="a_igual_b.js"></script>
+
+	<style type="text/css">
+	.clr1{ color:#000000;}
+	.clr2{ color:rgb(255, 255, 255); background-color: rgb(151, 0, 0)}
+	.clr3{ color:rgb(255, 255, 255); background-color: rgb(151, 0, 38)}
+	.clr4{ color:rgb(255, 255, 255); background-color: rgb(0, 102, 161)}
+	</style>
+
+
+<center><tr>
+		<td>
+				<img src="imagenes/logo_dci-ufro.PNG" alt="DCI, Universidad de la Frontera" width="254" height="95">
+		</td>
+		</tr>
+	</center>
+	<hr>
+	<h1>
+	<center><font FACE="arial" SIZE=5 COLOR="#c53e00">Máquina de Turing que acepta palabras sobre {a,b} tal que la cantidad de "a" sea igual a la cantidad de "b"</font></center>
+	</h1>
+	<hr>
+	<center>
+		
+<center>
+		<canvas id="panel" width="622" height="378" style="border: 1px solid #000000"> </canvas>
+
+		<br>
+
+		<tr>
+				<td>
+Estado actual:
+<div id="currEstado">  </div>
+
+Próxima letra:
+<div id="currLetra">  </div>
+
+Comparaciones:
+<div id="comp">  </div>
+
+<div id="accept"> </div>
+
+	</td>
+	</tr>
+
+	
+	
+<hr style="border-color:#FF2E00;">
+
+
+
+
+<div id="cinta" style="font-size:200%;" >
+	...####################...
+</div>
+<hr style="border-color:#FF2E00;">
+
+
+<tr>
+<td>
+Ingresar palabra <input id="word" type="text"/>
+<button onclick="mostrar_();">
+Ingresar
+</button>
+</td>
+</tr>
+
+<tr>
+<td>
+---------
+<button onclick="avanzar();">
+Ejecutar paso a paso
+</button>
+
+
+</td>
+</tr>
+
+<div id="posi" style="opacity: 0;" >
+	sadasdsdads
+</div>
+
+</center>
+	</center>
+
+
+<a href="suma_binaria.html"><span class="clr3">Suma binaria</span></a>
+<a href="index.html"><span class="clr4">Página principal</span></a>
+
+</body>
+</html>
